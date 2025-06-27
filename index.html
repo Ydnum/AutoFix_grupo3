@@ -35,7 +35,8 @@
         </div>
       </div>
     </section>
-    <section>
+
+    <section class="text-center">
       <h2>Servicios y Precios</h2>
       <div class="row">
         <div class="card col-4" style="width: 18rem">
@@ -117,13 +118,13 @@
           <!-- Nombre del Cliente -->
           <div class="mb-3">
             <label for="inputNombreDelCliente" class="form-label">Nombre del Cliente</label>
-            <input type="text" class="form-control" id="inputNombreDelCliente" />
+            <input type="text" class="form-control" id="inputNombreDelCliente" required/>
           </div>
 
           <!-- Tipo de Reparación -->
           <div class="mb-3">
             <label for="seleccionarServicio" class="form-label">Tipo de Reparación</label>
-            <select id="seleccionarServicio" class="form-select">
+            <select id="seleccionarServicio" class="form-select" required>
               <option selected disabled>Selecciona un servicio</option>
               <option>Cambio de aceite</option>
               <option>Revisión de frenos</option>
@@ -134,13 +135,13 @@
           <!-- Descripción -->
           <div class="mb-3">
             <label for="cajaDescripcion" class="form-label">Descripción</label>
-            <textarea class="form-control" id="cajaDescripcion" rows="3"></textarea>
+            <textarea class="form-control" id="cajaDescripcion" rows="3" required></textarea>
           </div>
 
           <!-- Agendar Cita -->
           <div class="mb-3">
             <label for="fecha" class="form-label">Agendar Cita</label>
-            <input type="datetime-local" class="form-control" id="fecha" />
+            <input type="datetime-local" class="form-control" id="fecha" required/>
           </div>
           <div class="d-grid gap-2 py-4">
             <button id="boton_realizar_pago" class="btn btn-success py-2" type="button">Realizar pago</button>
@@ -158,12 +159,12 @@
 
             <div class="mb-3">
               <label for="titular" class="form-label">Nombre del titular</label>
-              <input type="text" class="form-control" id="titular" />
+              <input type="text" class="form-control" id="titular" required/>
             </div>
 
             <div class="mb-3">
               <label for="cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cvv" />
+              <input type="text" class="form-control" id="cvv" required/>
             </div>
             <!-- Botón -->
             <button type="submit" class="text-center btn btn-success">
