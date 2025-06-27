@@ -1,0 +1,27 @@
+/*CSS RESET*/
+* {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+#modal_pago {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+    
+}
+
+#form_pago {
+    background-color: white;
+    height: 34.5%;
+    width: 25%;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+}
